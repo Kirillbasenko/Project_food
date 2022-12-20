@@ -1,6 +1,6 @@
 import tabs from "./modules/tabs";
 import calk from "./modules/calk";
-//import cards from "./modules/cards";
+import cards from "./modules/cards";
 import modal from "./modules/modal";
 import slider from "./modules/slider";
 import timer from "./modules/timer";
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () =>{
    const modalTimerId = setTimeout(() => openModal(".modal", modalTimerId), 300000);
    tabs(".tabheader__item", ".tabcontent", ".tabheader__items", "tabheader__item_active");
    calk();
-   //cards();
+   cards();
    modal("[data-modal]", ".modal", modalTimerId);
    slider({
       container: ".offer__slider",
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () =>{
       wrapper: ".offer__slider-wrapper",
       field: ".offer__slider-inner",
    });
-   timer(".timer", "2022-07-12");
+   timer(".timer", "2023-02-24");
    forms("form", modalTimerId);
 });
 

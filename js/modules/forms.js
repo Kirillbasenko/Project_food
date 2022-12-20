@@ -27,7 +27,8 @@ function forms(formSelector, modalTimerId){
             const formData = new FormData(form);
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
-            postData("http://localhost:3000/requests", json)
+            //postData("server.php", json)
+            postData("https://jsonplaceholder.typicode.com/posts", json)
             .then(data => {
                   console.log(data);
                   showThanksModal(message.success);
